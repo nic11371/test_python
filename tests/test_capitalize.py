@@ -1,12 +1,10 @@
 from capitalize import capitalize  # type: ignore
 
 
-if capitalize('hello') != "Hello":
-    raise Exception('Function works wrong')
+assert capitalize('') == ''
 
 
-if capitalize('') != '':
-    raise Exception('Function works wrong')
+assert capitalize('hello') == 'Hello'
 
 
 print('All tests are finished')
